@@ -1,0 +1,55 @@
+@layer utilities {
+  .bg-trueGray-900 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(34, 34, 34, var(--tw-bg-opacity));
+  }
+}
+
+* {
+  font-family: serif;
+  font-weight: 500;
+  color: #222222;
+  margin: 0;
+}
+
+.secol {
+  color: #b7b7b7;
+}
+
+body {
+  background-color: rgb(246, 246, 246);
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.desti {
+  right: 45%;
+}
+
+.scroll-w {
+  min-width: 35rem;
+}
+
+.max-width {
+  margin: 0 0 0 -12%;
+  padding-left: 12%;
+}
+
+.bg-trueGray-900 {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.bg-trueGray-900:hover {
+  color: black;
+  background-color: white;
+}
+
+.bg-button {
+  transition: background-color 0.3s, color 0.3s;
+  background-color: rgba(34, 34, 34, var(--tw-bg-opacity));
+}
+
+.bg-button:hover {
+  color: black;
+  background-color: white;
+}
