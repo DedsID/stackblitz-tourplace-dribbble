@@ -10,10 +10,10 @@ const Feature = () => {
           <div className="flex justify-between">
             <div className="pr-10">
               <div className="items-center justify-center pb-5 relative">
-                <div className="rounded-full w-20 h-20 bg-trueGray-900 flex items-center justify-center">
+                <div className="rounded-full w-20 h-20 bg-trueGray flex items-center justify-center">
                   <span className="text-white text-2xl">01</span>
                 </div>
-                <div className="w-3/4 border-t-2 border-dashed border-gray-900 absolute top-10 left-3/4"></div>
+                <div className="w-3/4 border-t-2 border-dashed border-gray-900 absolute top-10 left-3/4"></div> {/* menambah garis putus2 */}
               </div>
               <div className="text-5xl py-5">Dynamic Packaging</div>
               <div className="secol text-xl">
@@ -24,7 +24,7 @@ const Feature = () => {
 
             <div className="px-20">
               <div className="items-center justify-center pb-5">
-                <div className="rounded-full w-20 h-20 bg-trueGray-900 flex items-center justify-center">
+                <div className="rounded-full w-20 h-20 bg-trueGray flex items-center justify-center">
                   <span className="text-white text-2xl">02</span>
                 </div>
               </div>
@@ -38,10 +38,10 @@ const Feature = () => {
 
             <div className="pl-10">
               <div className="items-center justify-center pb-5 relative">
-                <div className="rounded-full w-20 h-20 bg-trueGray-900 flex items-center justify-center">
+                <div className="rounded-full w-20 h-20 bg-trueGray flex items-center justify-center">
                   <span className="text-white text-2xl">03</span>
                 </div>
-                <div className="w-3/4 border-t-2 border-dashed border-gray-900 absolute top-10 right-3/4"></div>
+                <div className="w-3/4 border-t-2 border-dashed border-gray-900 absolute top-10 right-3/4"></div> {/* menambah garis putus2 */}
               </div>
               <div className="text-5xl py-5">Multiple Vertical</div>
               <div className="secol text-xl">

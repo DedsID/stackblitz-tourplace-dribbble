@@ -78,7 +78,11 @@ const Footer = () => {
         </div>
         <div className="md:pl-10 xl:pl-0">
           <div className="text-2xl pb-5">Join Our Social Media:</div>
-          <div></div>
+          <div className="fa-2xl">
+            <a href="#" className="fa-brands fa-facebook"></a>
+            <a href="#" className="fa-brands fa-twitter px-8"></a>
+            <a href="#" className="fa-brands fa-linkedin"></a>
+          </div>
         </div>
       </div>
     </div>

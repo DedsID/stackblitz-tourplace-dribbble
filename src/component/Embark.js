@@ -11,7 +11,8 @@ const Embark = () => {
   return (
     <div className="style={headerStyle} md:max-w-2xl">
       <div className="relative inline-block">
-        <div className="text-lg text-gray-600 border border-black pr-4 pl-10 py-1 rounded-full">
+        <div className="text-lg text-gray-600 border border-black pr-4 py-1 rounded-full">
+        <i className="fa-brands fa-telegram fa-xs px-2"></i>
           Discover The World
         </div>
       </div>
@@ -29,6 +30,9 @@ const Embark = () => {
       <div className="relative md:inline-block py-10 md:w-10/12">
         <div className="flex items-center justify-between text-xl border-2 border-gray rounded-full p-2 bg-white">
           <div className="relative flex items-center">
+            <span className="absolute left-3">
+              <i className="fas fa-search text-gray-500"></i> {/* Ikon search dari Font Awesome*/}
+            </span>
             <input
               type="text"
               placeholder="Search your destination.."
@@ -42,6 +46,13 @@ const Embark = () => {
       </div>
 
       <div className="text-2xl font-semibold">Global Partner</div>
+      <div className="flex gap-12 fa-2xl pt-5">
+        <i className="fa-brands fa-airbnb"></i>
+        <i className="fa-brands fa-amazon"></i>
+        <i className="fa-brands fa-apple"></i>
+        <i className="fa-brands fa-google"></i>
+        <i className="fa-brands fa-instagram"></i>
+      </div>
     </div>
   );
 };

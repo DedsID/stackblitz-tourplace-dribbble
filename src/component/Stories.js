@@ -4,11 +4,18 @@ const Revo = () => {
   return (
     <div className="grid 2xl:grid-cols-2 py-40 relative">
       <div className="hidden 2xl:block"></div>
-      <div className="hidden 2xl:block absolute bg-white rounded-3xl pr-8 pl-36 py-6 top-60 desti">
-        <div className="text-6xl pb-2 relative">
-          500<span className="text-5xl absolute -top-1">+</span>
+      <div className="hidden 2xl:block absolute bg-white rounded-3xl px-8 py-6 top-60 desti">
+        <div className="flex items-center text-6xl pb-2">
+          <div className="jingga rounded-full p-2 mr-5 w-24 h-24 flex items-center justify-center">  {/* items-center untuk center secara atasbawah,  justify-center kanankiri*/}
+            <i className="fa-solid fa-location-dot"></i> {/* Ikon location-dot dari Font Awesome */}
+          </div>
+          <div>
+            <div className="relative">
+              500<span className="text-5xl absolute -top-1">+</span>
+            </div>
+            <div className="text-3xl">Destination</div>
+          </div>
         </div>
-        <div className="text-3xl">Destination</div>
       </div>
       <div className="2xl:pl-36">
         <div className="text-7xl pb-10">Our Stories Have Adventures</div>

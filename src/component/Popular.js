@@ -20,24 +20,31 @@ const Popular = () => {
     <div className="">
       <div className="flex justify-between items-center py-20">
         <div className="text-7xl max-w-lg">Find Popular Destination</div>
+
+        {/* button slider */}
+
         <div className="text-6xl flex gap-5">
           <button
             id="left"
-            className="rounded-full w-20 h-20 border border-black hover:bg-trueGray-900 hover:text-white flex justify-center cursor-pointer"
+            className=" fa-solid fa-chevron-left fa-xs 
+                        hover:text-white rounded-full w-20 h-20 border border-black cursor-pointer hover:bg-black
+                        transition duration-300"
             onClick={scrollLeft}
           >
-            {' '}
-            ‹{' '}
+            {/* Ikon chevron-right dari Font Awesome */}
           </button>
           <button
             id="right"
-            className="rounded-full w-20 h-20 border border-black hover:bg-trueGray-900 hover:text-white flex justify-center cursor-pointer"
+            className=" fa-solid fa-chevron-right fa-xs 
+                        hover:text-white rounded-full w-20 h-20 border border-black cursor-pointer hover:bg-black
+                        transition duration-300"
             onClick={scrollRight}
           >
-            {' '}
-            ›{' '}
+            {/* Ikon chevron-right dari Font Awesome */}
           </button>
         </div>
+
+        {/* button slider end */}
       </div>
 
       {/* card */}
@@ -49,56 +56,66 @@ const Popular = () => {
       >
         <div className="bg-white p-5 scroll-w rounded-3xl">
           <div className="h-72 bg-yellow-100 rounded-3xl"></div>
-          <div className="">Westminster Bridge</div>
-          <div className="text-2xl secol pt-2 pl-7">London, Uk</div>
+          <div className="pt-5">Westminster Bridge</div>
+          <div className="text-2xl secol pt-2">
+          <i className="fa-solid fa-location-dot mr-2"></i> {/* Ikon location-dot dari Font Awesome */}
+            London, Uk
+          </div>
           <div className="pt-5 flex justify-between items-center">
             <div className="text-3xl">
               $120<span className="text-2xl secol pt-2">/Person</span>
             </div>
-            <div className="text-xl bg-trueGray-900 text-white px-6 py-4 rounded-full">
+            <a href="#" className="text-xl bg-trueGray-900 text-white px-6 py-4 rounded-full">
               Book Now
-            </div>
+            </a>
           </div>
         </div>
         <div className="bg-white p-5 scroll-w rounded-3xl">
           <div className="h-72 bg-blue-100 rounded-3xl"></div>
-          <div className="">Sea Beach Phi Phi Island</div>
-          <div className="text-2xl secol pt-2 pl-7">
+          <div className="pt-5">Sea Beach Phi Phi Island</div>
+          <div className="text-2xl secol pt-2">
+          <i className="fa-solid fa-location-dot mr-2"></i> {/* Ikon location-dot dari Font Awesome */}
             Krabi Province, Thailand
           </div>
           <div className="pt-5 flex justify-between items-center">
             <div className="text-3xl">
               $120<span className="text-2xl secol pt-2">/Person</span>
             </div>
-            <div className="text-xl bg-trueGray-900 text-white px-6 py-4 rounded-full">
+            <a href="#" className="text-xl bg-trueGray-900 text-white px-6 py-4 rounded-full">
               Book Now
-            </div>
+            </a>
           </div>
         </div>
         <div className="bg-white p-5 scroll-w rounded-3xl">
           <div className="h-72 bg-red-100 rounded-3xl"></div>
-          <div className="">Day City View</div>
-          <div className="text-2xl secol pt-2 pl-7">China</div>
+          <div className="pt-5">Day City View</div>
+          <div className="text-2xl secol pt-2">
+          <i className="fa-solid fa-location-dot mr-2"></i> {/* Ikon location-dot dari Font Awesome */}
+            China
+          </div>
           <div className="pt-5 flex justify-between items-center">
             <div className="text-3xl">
               $120<span className="text-2xl secol pt-2">/Person</span>
             </div>
-            <div className="text-xl bg-trueGray-900 text-white px-6 py-4 rounded-full">
+            <a href="#" className="text-xl bg-trueGray-900 text-white px-6 py-4 rounded-full">
               Book Now
-            </div>
+            </a>
           </div>
         </div>
         <div className="bg-white p-5 scroll-w rounded-3xl">
           <div className="h-72 bg-yellow-100 rounded-3xl"></div>
-          <div className="">Lombok</div>
-          <div className="text-2xl secol pt-2 pl-7">Indonesia</div>
+          <div className="pt-5">Lombok</div>
+          <div className="text-2xl secol pt-2">
+          <i className="fa-solid fa-location-dot mr-2"></i> {/* Ikon location-dot dari Font Awesome */}
+            Indonesia
+          </div>
           <div className="pt-5 flex justify-between items-center">
             <div className="text-3xl">
               $120<span className="text-2xl secol pt-2">/Person</span>
             </div>
-            <div className="text-xl bg-trueGray-900 text-white px-6 py-4 rounded-full">
+            <a href="#" className="text-xl bg-trueGray-900 text-white px-6 py-4 rounded-full">
               Book Now
-            </div>
+            </a>
           </div>
         </div>
       </div>

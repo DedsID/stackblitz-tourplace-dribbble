@@ -44,6 +44,11 @@ body {
   background-color: white;
 }
 
+.bg-trueGray {
+  --tw-bg-opacity: 1;
+  background-color: rgba(34, 34, 34, var(--tw-bg-opacity));
+}
+
 .bg-button {
   transition: background-color 0.3s, color 0.3s;
   background-color: rgba(34, 34, 34, var(--tw-bg-opacity));
@@ -52,4 +57,8 @@ body {
 .bg-button:hover {
   color: black;
   background-color: white;
+}
+
+.jingga {
+  background-color: #fee2ac;
 }

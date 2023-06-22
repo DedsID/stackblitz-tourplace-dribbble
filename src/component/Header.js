@@ -1,11 +1,47 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <header className="pt-10 pb-20 flex items-center justify-between">
+    <header className="pt-10 pb-20 flex items-center justify-between relative">
       <div className="text-4xl font-extrabold">Tourplace</div>
-      <nav>
-        <ul className="flex space-x-4 font-medium text-2xl">
+      <nav className="md:hidden">
+        <button
+          className="focus:outline-none text-gray-500 hover:text-gray-800"
+          onClick={toggleMenu}
+        >
+          <svg
+            className="h-6 w-6 fill-current"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            {isMenuOpen ? (
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h16v2H4v-2z"
+              />
+            ) : (
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M4 5h16v2H4V5zm0 6h16v2H4v-2zm0 6h16v2H4v-2z"
+              />
+            )}
+          </svg>
+        </button>
+      </nav>
+      <nav
+        className={`md:flex ${
+          isMenuOpen ? 'block' : 'hidden'
+        } absolute inset-x-0 top-28 left-0 bg-gray-200 bg-opacity-60 backdrop-filter backdrop-blur-md z-10 md:relative md:top-0 md:bg-opacity-0 rounded-3xl`}
+      >
+        <ul className="px-10 py-5 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 font-medium text-2xl">
           <li className="md:px-5">
             <a href="#" className="hover:text-gray-200 font-bold">
               Home
@@ -33,7 +69,12 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <a href="#" className="bg-trueGray-900 text-xl text-white px-6 py-3 rounded-full">Book Now</a>
+      <a
+        href="#"
+        className="bg-trueGray-900 text-xl text-white px-6 py-3 rounded-full"
+      >
+        Book Now
+      </a>
     </header>
   );
 };
