@@ -33,10 +33,10 @@ const Feature = () => {
                 </div>
               </div>
               <div className="">
-                <div className="text-5xl py-5 text-left lg:text-center">
+                <div className="text-5xl py-5 text-right lg:text-center">
                   Instant Itineary
                 </div>
-                <div className="secol text-xl text-left lg:text-center">
+                <div className="secol text-xl text-right lg:text-center">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Reprehenderit blanditiis tempore quam! Quis, dolor hic eos
                   commodie.
