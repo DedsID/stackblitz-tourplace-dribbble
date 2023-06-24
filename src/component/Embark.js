@@ -12,26 +12,28 @@ const Embark = () => {
     <div className="style={headerStyle} md:max-w-2xl">
       <div className="relative inline-block">
         <div className="text-lg text-gray-600 border border-black pr-4 py-1 rounded-full">
-        <i className="fa-brands fa-telegram fa-xs px-2"></i>
+          <i className="fa-brands fa-telegram fa-xs px-2"></i>
           Discover The World
         </div>
       </div>
 
-      <div className="text-9xl pt-5 pb-7">
+      <div className="text-7xl sm:text-8xl md:text-9xl pt-5 pb-7">
         Embark on Unforgottable Adventures
       </div>
 
-      <div className="secol text-xl">
+      <div className="secol text-xl text-justify md:text-left">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
         accusantium vitae sunt ea officia totam earum omnis id quo architecto
-        repellendus fuga, nam, atque odio sunt ea officia totam earum omnis sit amet consectetur adipisicing.
+        repellendus fuga, nam, atque odio sunt ea officia totam earum omnis sit
+        amet consectetur adipisicing.
       </div>
 
       <div className="relative md:inline-block py-10 md:w-10/12">
         <div className="flex items-center justify-between text-xl border-2 border-gray rounded-full p-2 bg-white">
           <div className="relative flex items-center">
             <span className="absolute left-3">
-              <i className="fas fa-search text-gray-500"></i> {/* Ikon search dari Font Awesome*/}
+              <i className="fas fa-search text-gray-500"></i>{' '}
+              {/* Ikon search dari Font Awesome*/}
             </span>
             <input
               type="text"

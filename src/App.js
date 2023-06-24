@@ -18,7 +18,7 @@ const App = () => {
         <Embark />
         <Feature />
         <Services />
-        <Stories />
+        {/* <Stories /> */}
         <Popular />
         <Revo />
         <Footer />

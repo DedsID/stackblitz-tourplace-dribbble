@@ -23,7 +23,7 @@ const Popular = () => {
 
         {/* button slider */}
 
-        <div className="text-6xl flex gap-5">
+        <div className="text-6xl md:flex gap-5 hidden">
           <button
             id="left"
             className=" fa-solid fa-chevron-left fa-xs 

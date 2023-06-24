@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <header className="pt-10 pb-20 flex items-center justify-between relative">
       <div className="text-4xl font-extrabold">Tourplace</div>
-      <nav className="md:hidden">
+      <nav className="xl:hidden">
         <button
           className="focus:outline-none text-gray-500 hover:text-gray-800"
           onClick={toggleMenu}
@@ -37,32 +37,32 @@ const Header = () => {
         </button>
       </nav>
       <nav
-        className={`md:flex ${
+        className={`xl:flex ${
           isMenuOpen ? 'block' : 'hidden'
-        } absolute inset-x-0 top-28 left-0 bg-gray-200 bg-opacity-60 backdrop-filter backdrop-blur-md z-10 md:relative md:top-0 md:bg-opacity-0 rounded-3xl`}
+        } absolute inset-x-0 top-28 left-0 bg-gray-200 bg-opacity-60 backdrop-filter backdrop-blur-md z-10 xl:relative xl:top-0 xl:bg-opacity-0 rounded-3xl`}
       >
-        <ul className="px-10 py-5 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 font-medium text-2xl">
-          <li className="md:px-5">
+        <ul className="px-10 py-5 flex flex-col xl:flex-row space-y-4 xl:space-y-0 xl:space-x-4 font-medium text-2xl">
+          <li className="xl:px-5">
             <a href="#" className="hover:text-gray-200 font-bold">
               Home
             </a>
           </li>
-          <li className="md:px-5">
+          <li className="xl:px-5">
             <a href="#" className="secol hover:text-gray-200">
               About Us
             </a>
           </li>
-          <li className="md:px-5">
+          <li className="xl:px-5">
             <a href="#" className="secol hover:text-gray-200">
               Destination
             </a>
           </li>
-          <li className="md:px-5">
+          <li className="xl:px-5">
             <a href="#" className="secol hover:text-gray-200">
               Tour
             </a>
           </li>
-          <li className="md:px-5">
+          <li className="xl:px-5">
             <a href="#" className="secol hover:text-gray-200">
               Blog
             </a>
